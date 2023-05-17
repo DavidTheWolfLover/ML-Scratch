@@ -39,7 +39,7 @@ if __name__ == "__main__":
         X, y, test_size=0.2, random_state=1234
     )
 
-    regressor = LinearRegression(1)
+    regressor = LinearRegression(n_iters= 100000)
     regressor.fit(X_train, y_train)
     predicted = regressor.predict(X_test)
 
