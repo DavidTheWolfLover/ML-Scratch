@@ -45,7 +45,7 @@ if __name__ == "__main__":
     )
 
     #learning phase
-    regressor = LogisticRegression(lr=0.0001, n_iter=1000)
+    regressor = LogisticRegression(lr=0.0001, n_iter=10000)
     regressor.fit(X_train, y_train)
 
     #prediction phase
